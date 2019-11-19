@@ -2,6 +2,7 @@ buildPack: python
 pipelineConfig:
   pipelines:
     release:
-      build:
+      promote:
+        replace: true
         steps:
-        - command: echo This build worked fine! :) :) :)
+        - command: echo Promoting step
