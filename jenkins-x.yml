@@ -30,7 +30,7 @@ pipelineConfig:
         steps:
         - sh: python -m unittest
           name: python-unittest
-          post:
+    post:
       steps:
       - groovy: always
         when: "!prow"
