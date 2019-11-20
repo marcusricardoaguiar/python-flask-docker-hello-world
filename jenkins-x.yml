@@ -33,9 +33,6 @@ pipelineConfig:
         steps:
         - sh: python -m unittest
           name: python-unittest
-      promote:
-        steps:
-        - sh: jx promote --app python-flask-docker-hello-world --version \$(cat VERSION) --env staging
     post:
       steps:
       - groovy: always
