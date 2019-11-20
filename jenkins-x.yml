@@ -1,8 +1,0 @@
-buildPack: python
-pipelineConfig:
-  pipelines:
-    release:
-      promote:
-        replace: true
-        steps:
-        - command: echo Promoting step

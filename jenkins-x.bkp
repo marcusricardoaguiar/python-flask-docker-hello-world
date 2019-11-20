@@ -1,7 +1,0 @@
-buildPack: python
-pipelineConfig:
-  pipelines:
-    release:
-      build:
-        steps:
-        - command: echo This build worked fine! :) :) :)
