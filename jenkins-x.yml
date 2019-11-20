@@ -25,7 +25,7 @@ pipelineConfig:
         steps:
         - sh: echo \$(jx-release-version) > VERSION
           name: next-version
-          comment: so we can retrieve the version in later steps
+          comment: so we can retrieve the version in later steps!
         # TODO set the version in source?
         - sh: jx step tag --version \$(cat VERSION)
           name: tag-version
